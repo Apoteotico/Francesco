@@ -1,0 +1,54 @@
+button {
+  background-color: #4CAF50; /* Color de fondo */
+  border: none; /* Sin borde */
+  color: white; /* Color del texto */
+  padding: 15px 32px; /* Espaciado interno (vertical, horizontal) */
+  text-align: center; /* Alineación del texto */
+  text-decoration: none; /* Sin decoración de texto */
+  display: inline-block; /* Mostrar como elemento en línea */
+  font-size: 16px; /* Tamaño de fuente */
+  margin: 4px 20px; /* Margen (vertical, horizontal) */
+  cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
+  border-radius: 10px; /* Radio de borde */
+}
+
+/* Estilos cuando el cursor pasa sobre el botón */
+button:hover {
+  background-color: #45a049; /* Cambio de color de fondo */
+}
+.blog-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.blog-card {
+  width: 300px;
+  margin: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.blog-card img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ccc;
+}
+
+.blog-card-content {
+  padding: 20px;
+}
+
+.blog-card-content h2 {
+  margin-top: 0;
+}
+
+.blog-card-content p {
+  margin-bottom: 10px;
+}
+
+.date {
+  color: #999;
+  font-style: italic;
+}
