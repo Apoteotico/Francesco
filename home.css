@@ -1,21 +1,36 @@
-button {
-  background-color: #4CAF50; /* Color de fondo */
-  border: none; /* Sin borde */
-  color: white; /* Color del texto */
-  padding: 15px 32px; /* Espaciado interno (vertical, horizontal) */
-  text-align: center; /* Alineación del texto */
-  text-decoration: none; /* Sin decoración de texto */
-  display: inline-block; /* Mostrar como elemento en línea */
-  font-size: 16px; /* Tamaño de fuente */
-  margin: 4px 20px; /* Margen (vertical, horizontal) */
-  cursor: pointer; /* Cambiar el cursor al pasar sobre el botón */
-  border-radius: 10px; /* Radio de borde */
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-/* Estilos cuando el cursor pasa sobre el botón */
-button:hover {
-  background-color: #45a049; /* Cambio de color de fondo */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px; /* Margen amplio a los costados */
 }
+
+/* Estilos para los botones */
+button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Estilos para el contenido del blog */
 .blog-container {
   display: flex;
   flex-wrap: wrap;
@@ -51,4 +66,59 @@ button:hover {
 .date {
   color: #999;
   font-style: italic;
+}
+
+/* Estilos para el reproductor de video */
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  background-color: #444;
+}
+
+.video-wrapper {
+  position: relative;
+  
+}
+
+video {
+  width: 100%;
+  max-height: 90vh;
+  max-width: 400px;
+
+  border-radius: 5px;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.replay {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  display: none;
 }

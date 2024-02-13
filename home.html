@@ -7,11 +7,11 @@
   <link rel="stylesheet" href="home.css">
 </head>
 <body>
-  <!-- Botón para volver al index.html francesco caridi -->
-  <button onclick="window.location.href = 'index.html';">Ir a la página principal</button>
+  <!-- Botón para volver al index.html -->
+  <button class="back-button" onclick="window.location.href = 'index.html';">Back</button> 
   
-  <!-- Contenido del blog -->
-  <div class="blog-container">
+    <!-- Contenido del blog -->
+    <div class="blog-container">
     
     <div class="blog-card">
       <img src="img/tanjiro zen.jpeg" alt="Imagen 2">
@@ -21,6 +21,7 @@
         <p class="date">12 de febrero de 2024</p>
       </div>
     </div>
+
     <div class="blog-card">
       <img src="img/tanjiro poder.gif" alt="Imagen 2">
       <div class="blog-card-content">
@@ -87,6 +88,21 @@
     </div>
     <!-- Agrega más tarjetas según sea necesario -->
   </div>
-  <!--Fin del contenido del blog -->
+  
+  <!-- Contenedor del reproductor de video -->
+  <div class="video-container">
+    
+    <button class="prev" onclick="changeVideo(-1)">&lt;</button>
+    
+    <div class="video-wrapper" id="conTenedor">
+
+    <!-- acá se tienen que renderizar los videos de javascript -->
+
+    </div>
+    <button class="next" onclick="changeVideo(1)">&gt;</button>
+  </div>
+  <button class="replay" id="replayBtn" onclick="replayVideo()">Replay</button>
+
+  <script src="scripts.js"></script>
 </body>
 </html>
