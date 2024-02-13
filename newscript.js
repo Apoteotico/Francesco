@@ -1,2 +1,0 @@
-const contenedor = document.getElementById('conTenedor');
-contenedor.innerHTML ='<video id="video-player" controls><source id="video-source" src="videos/el susto de fran.mp4" type="video/mp4">Tu navegador no soporta la reproducción de videos.</video>';
