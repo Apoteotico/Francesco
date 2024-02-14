@@ -3,6 +3,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #111;
 }
 
 .container {
@@ -13,7 +14,8 @@ body {
 
 /* Estilos para los botones */
 button {
-  background-color: #4CAF50;
+  background-color: #6a1ebc;
+  filter: drop-shadow(20px 7px 5px rgb(79, 22, 79));
   border: none;
   color: white;
   padding: 10px 20px;
@@ -27,7 +29,7 @@ button {
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: #c352ac;
 }
 
 /* Estilos para el contenido del blog */
@@ -40,15 +42,25 @@ button:hover {
 .blog-card {
   width: 300px;
   margin: 20px;
-  border: 1px solid #ccc;
+  background-color: #070c52;
+  background-image: linear-gradient(
+    344deg,
+    #070c52 0%,
+    #b02cb9 46%,
+    #44186e 100%
+  );
+
+  border: 1px solid #30055e;
   border-radius: 5px;
+  filter: drop-shadow(20px 7px 5px rgb(79, 22, 79));
   overflow: hidden;
 }
 
 .blog-card img {
   width: 100%;
   height: auto;
-  border-bottom: 1px solid #ccc;
+  max-height: 150px;
+  border-radius: 1px;
 }
 
 .blog-card-content {
@@ -80,7 +92,6 @@ button:hover {
 
 .video-wrapper {
   position: relative;
-  
 }
 
 video {
@@ -91,7 +102,8 @@ video {
   border-radius: 5px;
 }
 
-.prev, .next {
+.prev,
+.next {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
